@@ -1,0 +1,299 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "InterVariable", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.page-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.75fr 1.5fr 0.375fr 1.25fr 1.25fr;
+  background: hsl(0, 0%, 100%);
+  margin-bottom: 20rem;
+}
+.page-container .top-bg-border {
+  position: absolute;
+  height: 27vh;
+  width: 100vw;
+  background-color: hsl(225, 100%, 98%);
+  z-index: 0;
+}
+.page-container .top-bg-border-dark {
+  background-color: hsl(232, 19%, 15%);
+}
+.page-container .first-row {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 9rem 2rem 9rem;
+}
+.page-container .first-row .first-col-left {
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+}
+.page-container .first-row .first-col-left .title {
+  font-size: 30px;
+  translate: 0 30%;
+}
+.page-container .first-row .first-col-left .title-dark {
+  color: hsl(0, 0%, 100%);
+}
+.page-container .first-row .first-col-left .follow-count {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  translate: 0 -30%;
+}
+.page-container .first-row .first-col-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 1rem;
+}
+.page-container .first-row .first-col-right .button-container {
+  border-radius: 2rem;
+  border: none;
+  background: hsl(230, 22%, 74%);
+  height: 2.75vh;
+  width: 3.15vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 0.25rem;
+  cursor: pointer;
+}
+.page-container .first-row .first-col-right .button-container-clicked {
+  justify-content: start;
+  padding-left: 0.25rem;
+  background: linear-gradient(290deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.page-container .first-row .first-col-right .dark-mode-button {
+  border: none;
+  height: 65%;
+  border-radius: 2rem;
+  width: 1.35rem;
+  cursor: pointer;
+}
+.page-container .first-row .first-col-right .dark-mode-button-active {
+  background-color: hsl(232, 19%, 15%);
+}
+.page-container .first-row .first-col-right .dark-mode-text {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+.page-container .second-row {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2.5rem;
+  margin: 0 9rem 0 9rem;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  cursor: pointer;
+}
+.page-container .second-row .account-stats-container {
+  height: 16rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: hsl(227, 47%, 96%);
+  padding-top: 1.5rem;
+}
+.page-container .second-row .account-stats-container .logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  margin-bottom: 1.25rem;
+}
+.page-container .second-row .account-stats-container .follows {
+  font-size: 72px;
+  font-weight: 700;
+}
+.page-container .second-row .account-stats-container .follow-text {
+  letter-spacing: 0.5rem;
+  color: hsl(228, 12%, 44%);
+  translate: 0 -100%;
+}
+.page-container .second-row .account-stats-container .platform-metrics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+  font-weight: 700;
+}
+.page-container .second-row .account-stats-container .face-metrics {
+  color: hsl(163, 72%, 41%);
+}
+.page-container .second-row .account-stats-container .twitter-metrics {
+  color: hsl(163, 72%, 41%);
+}
+.page-container .second-row .account-stats-container .insta-metrics {
+  color: hsl(163, 72%, 41%);
+}
+.page-container .second-row .account-stats-container .yt-metrics {
+  color: hsl(356, 69%, 56%);
+}
+.page-container .second-row .face-follows-container {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+.page-container .second-row .twitter-follows-container {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+.page-container .second-row .insta-follows-container {
+  border-top: 5px solid transparent;
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+}
+.page-container .second-row .youtube-subs-container {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+.page-container .second-row :hover {
+  background-color: #e1e3f0;
+}
+.page-container .second-row .account-stats-container-dark {
+  background-color: hsl(228, 28%, 20%);
+}
+.page-container .second-row .account-stats-container-dark .follows-dark {
+  color: hsl(0, 0%, 100%);
+}
+.page-container .second-row-dark :hover {
+  background-color: #333a56;
+}
+.page-container .third-row {
+  margin: 0 9rem 1rem 9rem;
+}
+.page-container .third-row .overview-text {
+  font-size: 26px;
+  padding-top: 2rem;
+  color: hsl(228, 12%, 44%);
+  letter-spacing: 0.05rem;
+  translate: 0 10%;
+}
+.page-container .third-row .overview-text-dark {
+  color: hsl(0, 0%, 100%);
+}
+.page-container .fourth-row,
+.page-container .fifth-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2.5rem;
+  margin: 0 9rem 0 9rem;
+  text-align: center;
+  cursor: pointer;
+}
+.page-container .fourth-row .overview-accounts,
+.page-container .fifth-row .overview-accounts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: hsl(227, 47%, 96%);
+  height: 12rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.page-container .fourth-row .overview-accounts .grid-separator,
+.page-container .fifth-row .overview-accounts .grid-separator {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 6rem 6rem;
+  align-items: center;
+}
+.page-container .fourth-row .overview-accounts .platform-info-text,
+.page-container .fifth-row .overview-accounts .platform-info-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  text-align: left;
+  transform: translateY(0.25rem);
+}
+.page-container .fourth-row .overview-accounts .platform-info-value,
+.page-container .fifth-row .overview-accounts .platform-info-value {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: left;
+  transform: translateY(-0.75rem);
+}
+.page-container .fourth-row .overview-accounts .platform-logo,
+.page-container .fifth-row .overview-accounts .platform-logo {
+  text-align: right;
+  transform: translateY(0.25rem);
+}
+.page-container .fourth-row .overview-accounts .daily-platform-metrics,
+.page-container .fifth-row .overview-accounts .daily-platform-metrics {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  column-gap: 0.25rem;
+  font-weight: 700;
+}
+.page-container .fourth-row .overview-accounts .face-views-metrics,
+.page-container .fifth-row .overview-accounts .face-views-metrics {
+  color: hsl(163, 72%, 41%);
+}
+.page-container .fourth-row .overview-accounts .face-likes-metrics,
+.page-container .fifth-row .overview-accounts .face-likes-metrics {
+  color: hsl(356, 69%, 56%);
+}
+.page-container .fourth-row .overview-accounts .insta-likes-metrics,
+.page-container .fifth-row .overview-accounts .insta-likes-metrics {
+  color: hsl(163, 72%, 41%);
+}
+.page-container .fourth-row .overview-accounts .insta-views-metrics,
+.page-container .fifth-row .overview-accounts .insta-views-metrics {
+  color: hsl(163, 72%, 41%);
+}
+.page-container .fourth-row .overview-accounts .twitter-retweet-metrics,
+.page-container .fifth-row .overview-accounts .twitter-retweet-metrics {
+  color: hsl(163, 72%, 41%);
+}
+.page-container .fourth-row .overview-accounts .twitter-likes-metrics,
+.page-container .fifth-row .overview-accounts .twitter-likes-metrics {
+  color: hsl(163, 72%, 41%);
+}
+.page-container .fourth-row .overview-accounts .youtube-likes-metrics,
+.page-container .fifth-row .overview-accounts .youtube-likes-metrics {
+  color: hsl(356, 69%, 56%);
+}
+.page-container .fourth-row .overview-accounts .youtube-views-metrics,
+.page-container .fifth-row .overview-accounts .youtube-views-metrics {
+  color: hsl(356, 69%, 56%);
+}
+.page-container .fourth-row :hover,
+.page-container .fifth-row :hover {
+  background-color: #e1e3f0;
+}
+.page-container .fourth-row .overview-accounts-dark,
+.page-container .fifth-row .overview-accounts-dark {
+  background-color: hsl(228, 28%, 20%);
+}
+.page-container .fourth-row .overview-accounts-dark .platform-info-value-dark,
+.page-container .fifth-row .overview-accounts-dark .platform-info-value-dark {
+  color: hsl(0, 0%, 100%);
+}
+.page-container .fifth-row {
+  translate: 0% -10%;
+  height: 12rem;
+}
+.page-container .fourth-row-dark :hover,
+.page-container .fifth-row-dark :hover {
+  background-color: #333a56;
+}
+
+html-dark, body-dark {
+  color: hsl(228, 34%, 66%);
+}
+
+.page-container-dark {
+  background: hsl(230, 17%, 14%);
+}
+
+/*# sourceMappingURL=output.css.map */
