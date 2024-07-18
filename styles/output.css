@@ -683,8 +683,8 @@ html, body {
 .page-container .tester .bottom-container .fifth-row .overview-accounts-dark .platform-info-value-dark {
   color: hsl(0, 0%, 100%);
 }
-.page-container .tester .fourth-row-dark :hover,
-.page-container .tester .fifth-row-dark :hover {
+.page-container .tester .bottom-container .fourth-row-dark :hover,
+.page-container .tester .bottom-container .fifth-row-dark :hover {
   background-color: #333a56;
 }
 
