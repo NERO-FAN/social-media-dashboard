@@ -10,11 +10,11 @@ const darkModeActivated = () => {
 }
 
 const darkify = () => {
-    const headElement = document.getElementById("head");
     const bodyElement = document.getElementById("body");
     const pageContainer = document.querySelector(".page-container ");
     const borderElement = document.querySelector(".top-bg-border");
     const titleElement = document.querySelector(".title");
+    const darkModeText = document.querySelector(".dark-mode-text");
     const buttonContainer = document.querySelector(".button-container");
     const buttonElement = document.querySelector(".dark-mode-button")
     const secondRow = document.querySelector(".second-row");
@@ -26,11 +26,11 @@ const darkify = () => {
     const fourthRow = document.querySelector(".fourth-row");
     const fifthRow = document.querySelector(".fifth-row");
     
-    headElement.classList.add("html-dark");
     bodyElement.classList.add("body-dark");
     pageContainer.classList.add("page-container-dark");
     borderElement.classList.add("top-bg-border-dark");
     titleElement.classList.add("title-dark");
+    darkModeText.classList.add("dark-mode-text-clicked");
     buttonContainer.classList.add("button-container-clicked");
     buttonElement.classList.add("dark-mode-button-active");
     secondRow.classList.add("second-row-dark");
@@ -56,11 +56,11 @@ const darkify = () => {
 }
 
 const undarkify = () => {
-    const headElement = document.getElementById("head");
     const bodyElement = document.getElementById("body");
     const pageContainer = document.querySelector(".page-container ");
     const borderElement = document.querySelector(".top-bg-border");
     const titleElement = document.querySelector(".title");
+    const darkModeText = document.querySelector(".dark-mode-text");
     const buttonContainer = document.querySelector(".button-container");
     const buttonElement = document.querySelector(".dark-mode-button");
     const secondRow = document.querySelector(".second-row");
@@ -72,11 +72,11 @@ const undarkify = () => {
     const fourthRow = document.querySelector(".fourth-row");
     const fifthRow = document.querySelector(".fifth-row");
     
-    headElement.classList.remove("html-dark");
     bodyElement.classList.remove("body-dark");
     pageContainer.classList.remove("page-container-dark");
     borderElement.classList.remove("top-bg-border-dark");
     titleElement.classList.remove("title-dark");
+    darkModeText.classList.remove("dark-mode-text-clicked");
     buttonContainer.classList.remove("button-container-clicked");
     buttonElement.classList.remove("dark-mode-button-active");
     secondRow.classList.remove("second-row-dark");

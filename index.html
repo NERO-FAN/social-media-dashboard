@@ -2,6 +2,7 @@
 <html lang="en">
 	<head id="head">
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Title</title>
 		<link rel="stylesheet" href="./styles/output.css">
 		<style>
@@ -17,225 +18,252 @@
 	<body id="body">
 		<div class="page-container">
 			<div class="top-bg-border"></div>
-			<div class="first-row">
-				<div class="first-col-left">
-					<h1 class="title">
-						Social Media Dashboard
-					</h1>
-					<p class="follow-count">
-						Total Followers: 23,004
-					</p>
-				</div>
-				<div class="first-col-right">
-					<a class="dark-mode-text">
-						Dark Mode
-					</a>
-					<div class="button-container">
-						<button id="dark-mode-button-element" class="dark-mode-button"
-								onclick="darkModeActivated()"></button>
+			<div class="tester">
+				<div class="first-row">
+					<div class="left">
+						<div class="left-top">
+							<span class="title">
+								Social Media Dashboard
+							</span>
+						</div>
+						<div class="left-bottom">
+							<span class="follow-count">
+								Total Followers: 23,004
+							</span>
+						</div>
+					</div>
+					<hr/>
+					<div class="right">
+						<div class="text-container">
+							<span class="dark-mode-text">
+								Dark Mode
+							</span>
+						</div>
+						<div class="button-container">
+							<button id="dark-mode-button-element" class="dark-mode-button"
+									onclick="darkModeActivated()"></button>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="second-row">
-				<div class="account-stats-container face-follows-container">
-					<p class="logo-area"><img src="./images/icon-facebook.svg"><a>@nathanf</a></p>
-					<p>
-						<a id="face-follow-count" class="follows">
-							1987
-						</a>
-					</p>
-					<p class="follow-text">
-						FOLLOWERS
-					</p>
-					<p class="platform-metrics face-metrics"><img src="./images/icon-up.svg"><a>12 Today</a></p>
-				</div>
-				<div class="account-stats-container twitter-follows-container">
-					<p class="logo-area"><img src="./images/icon-twitter.svg"><a>@nathanf</a></p>
-					<p>
-						<a id="twitter-follow-count" class="follows">
+				<div class="second-row">
+					<div class="account-stats-container face-follows-container">
+							<div class="logo-area">
+								<img class="platform-icon" src="./images/icon-facebook.svg">
+								<span>@nathanf</span>
+							</div>
+							<span id="face-follow-count" class="follows">
+								1987
+							</span>
+							<span class="follow-text">
+								FOLLOWERS
+							</span>
+							<div class="platform-metrics face-metrics">
+								<img class="metric-arrow" src="./images/icon-up.svg">
+								<span>12 Today</span>
+							</div>
+					</div>
+					<div class="account-stats-container twitter-follows-container">
+						<div class="logo-area">
+							<img class="platform-icon" src="./images/icon-twitter.svg">
+							<span>@nathanf</span>
+						</div>
+						<span id="twitter-follow-count" class="follows">
 							1044
-						</a>
-					</p>
-					<p class="follow-text">
-						FOLLOWERS
-					</p>
-					<p class="platform-metrics twitter-metrics"><img src="./images/icon-up.svg"><a>99 Today</a></p>
-				</div>
-				<div class="account-stats-container insta-follows-container">
-					<p class="logo-area"><img src="./images/icon-instagram.svg"><a>@realnathanf</a></p>
-					<p>
-						<a id="insta-follow-count" class="follows">
+						</span>
+						<span class="follow-text">
+							FOLLOWERS
+						</span>
+						<div class="platform-metrics twitter-metrics">
+							<img class="metric-arrow" src="./images/icon-up.svg">
+							<span>99 Today</span>
+						</div>
+					</div>
+					<div class="account-stats-container insta-follows-container">
+						<div class="logo-area">
+							<img class="platform-icon" src="./images/icon-instagram.svg">
+							<span>@realnathanf</span>
+						</div>
+						<span id="insta-follow-count" class="follows">
 							11k
-						</a>
-					</p>
-					<p class="follow-text">
-						FOLLOWERS
-					</p>
-					<p class="platform-metrics insta-metrics"><img src="./images/icon-up.svg"><a>1099 Today</a></p>
-				</div>
-				<div class="account-stats-container youtube-subs-container">
-					<p class="logo-area"><img src="./images/icon-youtube.svg"><a>Nathan F.</a></p>
-					<p>
-						<a id="yt-sub-count" class="follows">
+						</span>
+						<span class="follow-text">
+							FOLLOWERS
+						</span>
+						<div class="platform-metrics insta-metrics">
+							<img class="metric-arrow" src="./images/icon-up.svg">
+							<span>1099 Today</span>
+						</div>
+					</div>
+					<div class="account-stats-container youtube-subs-container">
+						<div class="logo-area">
+							<img class="platform-icon" src="./images/icon-youtube.svg">
+							<span>Nathan F.</span>
+						</div>
+						<span id="yt-sub-count" class="follows">
 							8239
-						</a>
-					</p>
-					<p class="follow-text">
-						SUBSCRIBERS
-					</p>
-					<p class="platform-metrics yt-metrics"><img src="./images/icon-down.svg"><a>144 Today</a></p>
-				</div>
-			</div>
-			<div class="third-row">
-				<h2 class="overview-text">
-					Overview - Today
-				</h2>
-			</div>
-			<div class="fourth-row">
-				<div class="overview-accounts face-views">
-					<div class="grid-separator">
-						<p class="platform-info-text">
-							Page Views
-						</p>
-						<p class="platform-info-value">
-							87
-						</p>
-					</div>
-					<div class="grid-separator">
-						<p class="platform-logo">
-							<img src="./images/icon-facebook.svg">
-						</p>
-						<p class="daily-platform-metrics face-views-metrics">
-							<img src="./images/icon-up.svg"><a>3%</a>
-						</p>
+						</span>
+						<span class="follow-text">
+							SUBSCRIBERS
+						</span>
+						<div class="platform-metrics yt-metrics">
+							<img class="metric-arrow" src="./images/icon-down.svg">
+							<span>144 Today</span>
+						</div>
 					</div>
 				</div>
-				<div class="overview-accounts face-likes">
-					<div class="grid-separator">
-						<p class="platform-info-text">
-							Likes
-						</p>
-						<p class="platform-info-value">
-							52
-						</p>
-					</div>
-					<div class="grid-separator">
-						<p class="platform-logo">
-							<img src="./images/icon-facebook.svg">
-						</p>
-						<p class="daily-platform-metrics face-likes-metrics">
-							<img src="./images/icon-down.svg"><a>2%</a>
-						</p>
-					</div>
+				<div class="third-row">
+					<h2 class="overview-text">
+						Overview - Today
+					</h2>
 				</div>
-				<div class="overview-accounts insta-likes">
-					<div class="grid-separator">
-						<p class="platform-info-text">
-							Likes
-						</p>
-						<p class="platform-info-value">
-							5462
-						</p>
+				<div class="bottom-container">
+					<div class="fourth-row">
+						<div class="overview-accounts face-views">
+							<div class="grid-separator-left">
+								<span class="platform-info-text">
+									Page Views
+								</span>
+								<span class="platform-info-value">
+									87
+								</span>
+							</div>
+							<div class="grid-separator-right">
+								<div class="platform-logo">
+									<img class="platform-icon" src="./images/icon-facebook.svg">
+								</div>
+								<div class="daily-platform-metrics face-views-metrics">
+									<img class="metric-arrow" src="./images/icon-up.svg"><span>3%</span>
+								</div>
+							</div>
+						</div>
+						<div class="overview-accounts face-likes">
+							<div class="grid-separator-left">
+								<span class="platform-info-text">
+									Likes
+								</span>
+								<span class="platform-info-value">
+									52
+								</span>
+							</div>
+							<div class="grid-separator-right">
+								<div class="platform-logo">
+									<img class="platform-icon" src="./images/icon-facebook.svg">
+								</div>
+								<div class="daily-platform-metrics face-likes-metrics">
+									<img class="metric-arrow" src="./images/icon-down.svg"><span>2%</span>
+								</div>
+							</div>
+						</div>
+						<div class="overview-accounts insta-likes">
+							<div class="grid-separator-left">
+								<span class="platform-info-text">
+									Likes
+								</span>
+								<span class="platform-info-value">
+									5462
+								</span>
+							</div>
+							<div class="grid-separator-right">
+								<div class="platform-logo">
+									<img class="platform-icon" src="./images/icon-instagram.svg">
+								</div>
+								<div class="daily-platform-metrics insta-likes-metrics">
+									<img class="metric-arrow" src="./images/icon-up.svg"><span>2257%</span>
+								</div>
+							</div>
+						</div>
+						<div class="overview-accounts insta-views">
+							<div class="grid-separator-left">
+								<span class="platform-info-text">
+									Profile Views
+								</span>
+								<span class="platform-info-value">
+									52k
+								</span>
+							</div>
+							<div class="grid-separator-right">
+								<div class="platform-logo">
+									<img class="platform-icon" src="./images/icon-instagram.svg">
+								</div>
+								<div class="daily-platform-metrics insta-views-metrics">
+									<img class="metric-arrow" src="./images/icon-up.svg"><span>1375%</span>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="grid-separator">
-						<p class="platform-logo">
-							<img src="./images/icon-instagram.svg">
-						</p>
-						<p class="daily-platform-metrics insta-likes-metrics">
-							<img src="./images/icon-up.svg"><a>2257%</a>
-						</p>
-					</div>
-				</div>
-				<div class="overview-accounts insta-views">
-					<div class="grid-separator">
-						<p class="platform-info-text">
-							Profile Views
-						</p>
-						<p class="platform-info-value">
-							52k
-						</p>
-					</div>
-					<div class="grid-separator">
-						<p class="platform-logo">
-							<img src="./images/icon-instagram.svg">
-						</p>
-						<p class="daily-platform-metrics insta-views-metrics">
-							<img src="./images/icon-up.svg"><a>1375%</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="fifth-row">
-				<div class="overview-accounts twitter-retweets">
-					<div class="grid-separator">
-						<p class="platform-info-text">
-							Retweets
-						</p>
-						<p class="platform-info-value">
-							117
-						</p>
-					</div>
-					<div class="grid-separator">
-						<p class="platform-logo">
-							<img src="./images/icon-twitter.svg">
-						</p>
-						<p class="daily-platform-metrics twitter-retweet-metrics">
-							<img src="./images/icon-up.svg"><a>303%</a>
-						</p>
-					</div>
-				</div>
-				<div class="overview-accounts twitter-likes">
-					<div class="grid-separator">
-						<p class="platform-info-text">
-							Likes
-						</p>
-						<p class="platform-info-value">
-							507
-						</p>
-					</div>
-					<div class="grid-separator">
-						<p class="platform-logo">
-							<img src="./images/icon-twitter.svg">
-						</p>
-						<p class="daily-platform-metrics twitter-likes-metrics">
-							<img src="./images/icon-up.svg"><a>553%</a>
-						</p>
-					</div>
-				</div>
-				<div class="overview-accounts youtube-likes">
-					<div class="grid-separator">
-						<p class="platform-info-text">
-							Likes
-						</p>
-						<p class="platform-info-value">
-							107
-						</p>
-					</div>
-					<div class="grid-separator">
-						<p class="platform-logo">
-							<img src="./images/icon-youtube.svg">
-						</p>
-						<p class="daily-platform-metrics youtube-likes-metrics">
-							<img src="./images/icon-down.svg"><a>15%</a>
-						</p>
-					</div>
-				</div>
-				<div class="overview-accounts youtube-views">
-					<div class="grid-separator">
-						<p class="platform-info-text">
-							Total Views
-						</p>
-						<p class="platform-info-value">
-							1407
-						</p>
-					</div>
-					<div class="grid-separator">
-						<p class="platform-logo">
-							<img src="./images/icon-youtube.svg">
-						</p>
-						<p class="daily-platform-metrics youtube-views-metrics">
-							<img src="./images/icon-down.svg"><a>12%</a>
-						</p>
+					<div class="fifth-row">
+						<div class="overview-accounts twitter-retweets">
+							<div class="grid-separator-left">
+								<span class="platform-info-text">
+									Retweets
+								</span>
+								<span class="platform-info-value">
+									117
+								</span>
+							</div>
+							<div class="grid-separator-right">
+								<div class="platform-logo">
+									<img class="platform-icon" src="./images/icon-twitter.svg">
+								</div>
+								<div class="daily-platform-metrics twitter-retweet-metrics">
+									<img class="metric-arrow" src="./images/icon-up.svg"><span>303%</span>
+								</div>
+							</div>
+						</div>
+						<div class="overview-accounts twitter-likes">
+							<div class="grid-separator-left">
+								<span class="platform-info-text">
+									Likes
+								</span>
+								<span class="platform-info-value">
+									507
+								</span>
+							</div>
+							<div class="grid-separator-right">
+								<div class="platform-logo">
+									<img class="platform-icon" src="./images/icon-twitter.svg">
+								</div>
+								<div class="daily-platform-metrics twitter-likes-metrics">
+									<img class="metric-arrow" src="./images/icon-up.svg"><span>553%</span>
+								</div>
+							</div>
+						</div>
+						<div class="overview-accounts youtube-likes">
+							<div class="grid-separator-left">
+								<span class="platform-info-text">
+									Likes
+								</span>
+								<span class="platform-info-value">
+									107
+								</span>
+							</div>
+							<div class="grid-separator-right">
+								<div class="platform-logo-right">
+									<img class="platform-icon" src="./images/icon-youtube.svg">
+								</div>
+								<div class="daily-platform-metrics youtube-likes-metrics">
+									<img class="metric-arrow" src="./images/icon-down.svg"><span>15%</span>
+								</div>
+							</div>
+						</div>
+						<div class="overview-accounts youtube-views">
+							<div class="grid-separator-left">
+								<span class="platform-info-text">
+									Total Views
+								</span>
+								<span class="platform-info-value">
+									1407
+								</span>
+							</div>
+							<div class="grid-separator-right">
+								<div class="platform-logo">
+									<img class="platform-icon" src="./images/icon-youtube.svg">
+								</div>
+								<div class="daily-platform-metrics youtube-views-metrics">
+									<img class="metric-arrow" src="./images/icon-down.svg"><span>12%</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
