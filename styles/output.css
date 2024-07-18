@@ -31,7 +31,14 @@ html, body {
     font-size: 24px;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 680px) {
+  html, body {
+    height: max-content;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media (max-width: 428px) {
   html, body {
     height: max-content;
     width: 100%;
@@ -166,7 +173,12 @@ html, body {
     font-size: 44px;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 680px) {
+  .page-container .tester .first-row .left .left-top .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 428px) {
   .page-container .tester .first-row .left .left-top .title {
     font-size: 22px;
   }
@@ -181,7 +193,12 @@ html, body {
 .page-container .tester .first-row .left .left-bottom .follow-count {
   font-weight: 700;
 }
-@media (max-width: 560px) {
+@media (max-width: 680px) {
+  .page-container .tester .first-row .left .left-bottom .follow-count {
+    font-size: 16px;
+  }
+}
+@media (max-width: 428px) {
   .page-container .tester .first-row .left .left-bottom .follow-count {
     font-size: 12px;
   }
@@ -229,12 +246,18 @@ html, body {
 @media (max-width: 1280px) {
   .page-container .tester .first-row .right .button-container {
     height: 47.5%;
+    width: 11%;
   }
 }
 @media (max-width: 1024px) {
   .page-container .tester .first-row .right .button-container {
     height: 1.75rem;
     width: 12%;
+  }
+}
+@media (min-width: 526px) and (max-width: 680px) {
+  .page-container .tester .first-row .right .button-container {
+    height: 2.25rem;
   }
 }
 .page-container .tester .first-row .right .button-container-clicked {
@@ -252,20 +275,38 @@ html, body {
 }
 @media (max-width: 1280px) {
   .page-container .tester .first-row .right .dark-mode-button {
-    height: 62.5%;
-    width: 37.5%;
+    height: 60%;
+    width: 30%;
   }
 }
 @media (max-width: 1024px) {
   .page-container .tester .first-row .right .dark-mode-button {
-    height: 60%;
+    height: 57.5%;
     width: 32.5%;
+  }
+}
+@media (max-width: 844px) {
+  .page-container .tester .first-row .right .dark-mode-button {
+    height: 65%;
+    width: 40%;
   }
 }
 @media (max-width: 768px) {
   .page-container .tester .first-row .right .dark-mode-button {
-    height: 55%;
-    width: 30%;
+    height: 62.5%;
+    width: 35%;
+  }
+}
+@media (max-width: 680px) {
+  .page-container .tester .first-row .right .dark-mode-button {
+    height: 67.5%;
+    width: 35%;
+  }
+}
+@media (max-width: 450px) {
+  .page-container .tester .first-row .right .dark-mode-button {
+    height: 60%;
+    width: 35%;
   }
 }
 .page-container .tester .first-row .right .dark-mode-button-active {
@@ -352,12 +393,17 @@ html, body {
 }
 @media (max-width: 768px) {
   .page-container .tester .second-row .account-stats-container .follows {
-    font-size: 112px;
+    font-size: 108px;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 680px) {
   .page-container .tester .second-row .account-stats-container .follows {
-    font-size: 66px;
+    font-size: 70px;
+  }
+}
+@media (max-width: 428px) {
+  .page-container .tester .second-row .account-stats-container .follows {
+    font-size: 64px;
   }
 }
 .page-container .tester .second-row .account-stats-container .follow-text {
