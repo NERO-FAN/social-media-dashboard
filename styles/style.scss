@@ -80,12 +80,12 @@ html, body {
     background-color: hsl(225, 100%, 98%);
     z-index: 0;
 
-    @media (max-width: 1024px) {
-      height: 10%;
+    @media (min-width: 350px) and (max-width: 768px) {
+      height: 500rem;
     }
 
-    @media (max-width: 560px) {
-      height: 8%;
+    @media (max-width: 1024px) {
+      height: 10%;
     }
   }
 
@@ -220,6 +220,7 @@ html, body {
         }
 
         .button-container {
+          padding: 0;
           border-radius: 2rem;
           border: none;
           background: hsl(230, 22%, 74%);

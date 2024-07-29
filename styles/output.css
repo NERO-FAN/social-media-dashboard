@@ -87,14 +87,14 @@ html, body {
   background-color: hsl(225, 100%, 98%);
   z-index: 0;
 }
+@media (min-width: 350px) and (max-width: 768px) {
+  .page-container .top-bg-border {
+    height: 500rem;
+  }
+}
 @media (max-width: 1024px) {
   .page-container .top-bg-border {
     height: 10%;
-  }
-}
-@media (max-width: 560px) {
-  .page-container .top-bg-border {
-    height: 8%;
   }
 }
 .page-container .top-bg-border-dark {
@@ -232,6 +232,7 @@ html, body {
   }
 }
 .page-container .tester .first-row .right .button-container {
+  padding: 0;
   border-radius: 2rem;
   border: none;
   background: hsl(230, 22%, 74%);
@@ -267,6 +268,7 @@ html, body {
   background: linear-gradient(70deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 .page-container .tester .first-row .right .dark-mode-button {
+  padding: 0;
   border: none;
   height: 67.5%;
   border-radius: 2rem;
